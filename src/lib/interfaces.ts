@@ -6,6 +6,7 @@ export interface OverviewData {
 }
 
 export interface ItemData {
+    id: string,
     name: string,
     sku: string,
     category: Category,
