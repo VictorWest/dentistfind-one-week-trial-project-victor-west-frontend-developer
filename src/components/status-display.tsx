@@ -27,7 +27,7 @@ export default function StatusDisplay({status}:{status: Status}){
     }, [])
 
     return(
-        <div className="py-1 px-2 rounded-full text-center font-semibold text-xs sm:text-sm whitespace-nowrap" style={{ background: backgroundColour, color: textColour  }}>
+        <div className="py-1 px-2 rounded-full font-semibold text-xs sm:text-sm whitespace-nowrap" style={{ background: backgroundColour, color: textColour  }}>
             {status}
         </div>
     )
