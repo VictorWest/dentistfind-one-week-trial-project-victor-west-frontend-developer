@@ -17,7 +17,7 @@ export default function ItemManagement(){
     }, [items])
 
     return (
-        <div className="mt-5 space-y-5 px-4 sm:px-0">
+        <div>
             <h2 className="text-xl sm:text-2xl font-bold">Item Management</h2>
             <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-5">
                 <Input icon={<CiSearch />} placeholder="Search items" />
@@ -25,7 +25,7 @@ export default function ItemManagement(){
                     <Button text={<div className="flex items-center gap-1 justify-center"><IoIosAdd /><p className="hidden sm:block">Add New Item</p></div>} />
                 </Link>
             </div>
-            <div className="">
+            <div className="border border-stone-50 shadow rounded-xl p-5">
                 <div className="*:flex *:items-center *:*:w-90 *:gap-2 sm:*:gap-5 ">
                     <div className="text-stone-600 font-semibold text-xs sm:text-sm">
                         <p>Name</p>

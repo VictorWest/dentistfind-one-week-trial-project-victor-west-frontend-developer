@@ -34,3 +34,8 @@ export const CATEGORIES: Category[] = [
 ];
 
 export type Status = "In Progress" | "Completed" | "On Hold" | "Pending"
+
+export interface RecentActivity {
+    description: string,
+    createdAt: Date
+}

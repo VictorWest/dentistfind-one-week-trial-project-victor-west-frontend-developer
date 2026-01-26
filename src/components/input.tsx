@@ -1,6 +1,6 @@
 import type React from "react";
 
-export default function Input({ title, type="text", icon, placeholder, onChange, value }:{ title?: string | React.ReactNode, type?: string, icon: React.ReactNode, placeholder: string, onChange: React.ChangeEventHandler<HTMLInputElement>, value: string | number | readonly string[] | undefined }){
+export default function Input({ title, type="text", icon, placeholder, onChange, value }:{ title?: string | React.ReactNode, type?: string, icon: React.ReactNode, placeholder: string, onChange?: React.ChangeEventHandler<HTMLInputElement>, value?: string | number | readonly string[] | undefined }){
     return (
         <div className={`${title && "space-y-1"} w-full`}>
             {title && <p className="font-semibold">{title}</p>}
